@@ -17,7 +17,7 @@ npm i && npm run dev
 ## ✨ Features
 
 - Built with **React** and **TypeScript**
-- Custom **component library** (`lib/`)
+- Custom **component library** (`components/`)
 - All styles done using **custom SCSS**
 - **react-charts** for charts
 - **MUI modals**
