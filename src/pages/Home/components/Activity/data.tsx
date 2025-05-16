@@ -8,7 +8,7 @@ const HIGHLIGHTS = [
     img: One,
     title: "Secure & Collateralized",
     subtitle: `The pool is overcollateralized with real-word assets, ensuring risk protection. 
-    Assets include commercial real estate, SME loans, and structured finance product.`
+    Assets include commercial real estate, SME loans, and structured finance product`
   },
   {
     img: Two,
