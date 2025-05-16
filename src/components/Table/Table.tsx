@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import styles from "./Table.module.scss";
 import cx from "classnames";
-const Table = ({ headers, body, isLeft }: { isLeft?: boolean, headers: string[], body: string[][] }) => {
+const Table = ({ headers, body, isLeft }: { isLeft?: boolean, headers: string[], body: any[][] }) => {
   return (
     <table className={styles.Table}>
       <thead>

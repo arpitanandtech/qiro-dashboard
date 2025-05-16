@@ -45,7 +45,7 @@ const Transaction = () => {
         handleOpen2();
         handleClose2();
         showToast();
-      }, 2000);
+      }, 2500);
     }
   }, [open1])
 

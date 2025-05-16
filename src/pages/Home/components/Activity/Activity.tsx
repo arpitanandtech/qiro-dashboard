@@ -14,7 +14,7 @@ import { BarChart } from '@mui/x-charts/BarChart';
 import { PieChart } from "@mui/x-charts";
 import { useState } from "react";
 import { PiCaretUpDown } from "react-icons/pi";
-import { CiCircleInfo } from "react-icons/ci";
+import { CiCircleInfo, CiFileOn } from "react-icons/ci";
 const Activity = () => {
 
   const barColors = [
@@ -114,19 +114,19 @@ const Activity = () => {
               }}
               sx={{
                 '& .MuiChartsAxis-line': {
-                  stroke: '#eee', // axis line color
+                  stroke: '#e6e6e6', // axis line color
                 },
                 '& .MuiChartsAxis-tick': {
-                  stroke: '#eee', // tick mark color
+                  stroke: '#e6e6e6', // tick mark color
                 },
                 '& .MuiChartsGrid-line': {
-                  stroke: '#eee', // grid line color
+                  stroke: '#e6e6e6', // grid line color
                 },
               }}
               yAxis={[
                 {
                   tickLabelStyle: {
-                    color: '#eee',
+                    color: '#e6e6e6',
                     fontSize: '0.6rem'
                   },
                 }
@@ -137,7 +137,7 @@ const Activity = () => {
               xAxis={[
                 {
                   tickLabelStyle: {
-                    color: '#eee',
+                    color: '#e6e6e6',
                     fontSize: '0.6rem'
                   },
                   scaleType: 'band',
@@ -153,7 +153,6 @@ const Activity = () => {
               height={300}
               slotProps={{
                 bar: {
-
                   style: {
                     borderTopLeftRadius: '0.5rem',
                     borderTopRightRadius: '0.5rem',
@@ -295,7 +294,7 @@ const Activity = () => {
               ['Pool Type', "Senior Trache", ""],
               ['Investor Protections', "20-25% first-loss coverage", ""],
               ['Collateralization', "Yes, This loan is secured with real-world, off-chain assets as collateral", ""],
-              ['Legal Documents', "Senior Pool Agreement", ""],
+              ['Legal Documents', <p className={styles.sort1}><CiFileOn />Senior Pool Agreement</p>, ""],
             ]}
           />
         </Card>

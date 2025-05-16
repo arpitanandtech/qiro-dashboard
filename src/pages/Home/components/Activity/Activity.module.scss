@@ -273,6 +273,7 @@
         & svg {
           margin-bottom: 0 !important;
           font-size: 1.15rem;
+          cursor: pointer;
         }
       }
     }
@@ -350,4 +351,13 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.sort1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  & svg {
+    background-color: #b99570;
+  }
 }
