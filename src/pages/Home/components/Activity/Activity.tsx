@@ -91,7 +91,7 @@ const Activity = () => {
         <div className={styles.Activity__highlights}>
           {HIGHLIGHTS.map((item, i) => {
             return (<div className={styles.Activity__highlights__box} key={i}>
-              <Card isUp>
+              <Card isUp ishun>
                 <div className={styles.Activity__highlights__box__c}>
                   <img src={item.img} alt={item.title} />
                   <p>{item.title}</p>
