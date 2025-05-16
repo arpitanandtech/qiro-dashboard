@@ -2,6 +2,10 @@
 
 This is a Qiro assignment application built using React and TypeScript.
 
+## Production URL
+
+- https://qiro-dashboard.vercel.app/
+
 ## 🔧 Installation
 
 ```bash
