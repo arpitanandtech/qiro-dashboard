@@ -11,7 +11,7 @@ const Table = ({ headers, body, isLeft }: { isLeft?: boolean, headers: string[],
       </thead>
       <tbody>
         {body.map((item, index) => {
-          return (<tr key={index}>
+          return (<tr className={cx({ [styles.alignLeft2]: isLeft })} key={index}>
             {item.map((it: string, ics: number) => {
               return <td className={cx({ [styles.alignLeft]: isLeft })} key={ics}>{it}</td>
             })}

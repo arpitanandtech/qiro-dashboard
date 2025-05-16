@@ -1,16 +1,18 @@
 .Button {
   width: 99%;
-  height: 2.7rem;
+  height: 60px;
   background-color: #7052e7;
-  border-radius: 1.5rem;
+  border-radius: 1.75rem;
   color: white;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   cursor: pointer;
   &__disabled {
     background-color: grey !important;
   }
   &__height {
-    height: 2rem !important;
-    font-size: 0.75rem;
+    height: 54px !important;
+    font-size: 1rem !important;
+    color: white !important;
+    font-weight: 600 !important;
   }
 }

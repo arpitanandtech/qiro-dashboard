@@ -5,7 +5,6 @@ import styles from "./Activity.module.scss";
 import cx from 'classnames';
 import { HIGHLIGHTS } from "./data";
 import Table from "../../../../components/Table/Table";
-import { RxOpenInNewWindow } from "react-icons/rx";
 import { FiSearch } from "react-icons/fi";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import AdvanceTable from "../../../../components/AdvanceTable/AdvanceTable";
@@ -15,6 +14,7 @@ import { PieChart } from "@mui/x-charts";
 import { useState } from "react";
 import { PiCaretUpDown } from "react-icons/pi";
 import { CiCircleInfo, CiFileOn } from "react-icons/ci";
+import { BsArrowUpRight } from "react-icons/bs";
 const Activity = () => {
 
   const barColors = [
@@ -67,7 +67,7 @@ const Activity = () => {
 
             </div>
             <div className={styles.Activity__overview__line__text}>
-              80% filled
+              80% Filed
             </div>
           </div>
           <div className={styles.Activity__overview__estimation}>
@@ -245,17 +245,17 @@ const Activity = () => {
                   <Chip isGrey title="Variable Yield" />
                 </div>
                 <div className={cx(styles.Activity__overview__estimation, styles.Activity__structure__box__second__heads__card)}>
-                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__bl)}>
+                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__bl, styles.overridePadding)}>
                     <p>Allocation</p>
-                    <span>80%</span>
+                    <span className={styles.overrideFont}>80%</span>
                   </div>
-                  <div className={styles.Activity__overview__estimation__box}>
+                  <div className={cx(styles.Activity__overview__estimation__box, styles.overridePadding)}>
                     <p>APY</p>
-                    <span>14%</span>
+                    <span className={styles.overrideFont}>14%</span>
                   </div>
-                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__br)}>
+                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__br, styles.overridePadding)}>
                     <p> TVL</p>
-                    <span>336K USD</span>
+                    <span className={styles.overrideFont}>336K USD</span>
                   </div>
                 </div>
               </div>
@@ -266,17 +266,17 @@ const Activity = () => {
                   <Chip isGrey title="Variable Yield" />
                 </div>
                 <div className={cx(styles.Activity__overview__estimation, styles.Activity__structure__box__second__heads__card)}>
-                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__bl)}>
+                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__bl, styles.overridePadding)}>
                     <p>Allocation</p>
-                    <span>20%</span>
+                    <span className={styles.overrideFont}>20%</span>
                   </div>
-                  <div className={styles.Activity__overview__estimation__box}>
+                  <div className={cx(styles.Activity__overview__estimation__box, styles.overridePadding)}>
                     <p>APY</p>
-                    <span>19%</span>
+                    <span className={styles.overrideFont}>19%</span>
                   </div>
-                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__br)}>
+                  <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__br, styles.overridePadding)}>
                     <p>TVL</p>
-                    <span>5M</span>
+                    <span className={styles.overrideFont}>5M USD</span>
                   </div>
                 </div>
               </div>
@@ -310,19 +310,19 @@ const Activity = () => {
               <span>Powering Smarter Credit Decisions with Trusted Underwriting Partners</span>
             </div>
             <div className={styles.Activity__underwriters__box__buttons}>
-              View Detailed Report <RxOpenInNewWindow />
+              View Detailed Report <BsArrowUpRight />
             </div>
 
           </div>
           <div className={styles.Activity__overview__estimation}>
             <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__bl)}>
               <p>Risk Score <CiCircleInfo /></p>
-              <span>8.9/10</span>
+              <span className={styles.override4}>8.9/10</span>
             </div>
 
             <div className={cx(styles.Activity__overview__estimation__box, styles.Activity__overview__estimation__box__br)}>
               <p>Default Probablity <CiCircleInfo /></p>
-              <span>Low</span>
+              <span className={styles.override4}>Low</span>
             </div>
           </div>
         </Card>
@@ -333,7 +333,7 @@ const Activity = () => {
           <div className={styles.Activity__poolActivity__search__left}>
             <div className={styles.inputWrapper}>
               <span className={styles.inputWrapper__icon}><FiSearch /></span>
-              <input type="text" placeholder="Search By Address..." />
+              <input type="text" placeholder="Search By Address" />
             </div>
           </div>
           <div className={styles.Activity__poolActivity__search__right}>
@@ -351,10 +351,10 @@ const Activity = () => {
           <AdvanceTable
             headers={[<p className={styles.sort}>Wallet<PiCaretUpDown /></p>, <p className={styles.sort}>Tx Type<PiCaretUpDown /></p>, <p className={styles.sort}>Amount<PiCaretUpDown /></p>, <p className={styles.sort}>Date<PiCaretUpDown /></p>, ""]}
             body={[
-              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<RxOpenInNewWindow />} isPrimary isSecondary />],
-              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<RxOpenInNewWindow />} isPrimary isSecondary />],
-              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<RxOpenInNewWindow />} isPrimary isSecondary />],
-              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<RxOpenInNewWindow />} isPrimary isSecondary />]
+              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<BsArrowUpRight />} isPrimary isSecondary />],
+              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<BsArrowUpRight />} isPrimary isSecondary />],
+              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<BsArrowUpRight />} isPrimary isSecondary />],
+              [<Wallet />, "Invest", "+$ 6.7k USDC", "5 Mar, 2025", <Chip title="Tx" isNotLeft noti={<BsArrowUpRight />} isPrimary isSecondary />]
             ]}
           />
         </Card>

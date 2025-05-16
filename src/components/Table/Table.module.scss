@@ -3,28 +3,30 @@
   width: 100%;
   border: 1px solid #eee !important;
   border-radius: 1rem;
-  padding: 0.25rem;
+  padding: 0 0.25rem;
   overflow: hidden;
 
   & table {
     border-radius: 0.5rem;
     border: 1px solid #eee !important;
   }
+  & thead {
+    height: 2rem;
+  }
   & tr th {
     text-align: center;
-    font-size: 0.85rem;
-    color: grey;
-    font-weight: 600;
-    padding: 0.5rem;
-    border-bottom: 1px solid #eee;
+    font-size: 0.875rem;
+    color: #3d3d3d;
+    font-weight: 500;
+    border-bottom: 1px solid #f3f3f3;
   }
   & tr td {
-    border-bottom: 1px solid #eee;
-    font-weight: 300;
+    border-bottom: 1px solid #f3f3f3;
+    font-weight: 400;
     text-align: center;
-    font-size: 0.75rem;
-    color: grey;
-    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: #44403c;
+    padding: 0.5rem 0.75rem;
   }
   & tr:last-child td {
     border-bottom: none; // remove last row bottom border
@@ -55,6 +57,13 @@ td:last-child {
 }
 
 .paddingHeader {
-  padding: 0.35rem !important;
   padding-left: 1.35rem !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  line-height: 1.25rem !important;
+  padding: 1rem 1.5rem !important;
+}
+
+.alignLeft2:first-child {
+  font-weight: 600 !important;
 }

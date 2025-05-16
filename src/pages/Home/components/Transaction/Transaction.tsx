@@ -8,9 +8,10 @@ import Rupee from "../../../../assets/rupee.svg";
 import { useEffect, useState } from "react";
 import { Box, Modal } from "@mui/material";
 import Title from "../../../../components/Title/Title";
-import { IoCloseCircleOutline, IoCopyOutline } from "react-icons/io5";
+import { IoCloseCircleOutline, IoCloseOutline, IoCopyOutline } from "react-icons/io5";
 import Toast from "../../../../components/Toast/Toast";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import MTitle from "../../../../components/Title/ModalTitle";
 const Transaction = () => {
 
   const [activeTab, setActiveTab] = useState('deposit');
@@ -60,7 +61,7 @@ const Transaction = () => {
     boxShadow: 24,
     p: 4,
     width: '90vw',            // Responsive width
-    maxWidth: 400,            // Limit on large screens
+    maxWidth: 600,            // Limit on large screens
     maxHeight: '90vh',        // Prevent from going off screen
     overflowY: 'auto',
   };
@@ -120,7 +121,7 @@ const Transaction = () => {
           <div className={styles.Transaction__acc__box}>
             <div className={styles.Transaction__acc__box__header}>
               <p><img src={MetaMask} alt="" /> 0x9102...e3e7</p>
-              <p>$-69.33 USDC</p>
+              <span>$-69.33 USDC</span>
             </div>
             <div className={styles.Transaction__acc__box__footer}>
               <p>Invested</p>
@@ -137,15 +138,15 @@ const Transaction = () => {
       >
         <Box sx={style}>
           <div className={styles.Modal__header}>
-            <Title title={activeTab == "deposit" ? "Review Deposit" : "Review WithDraw"} />
-            <IoCloseCircleOutline onClick={handleClose} />
+            <MTitle title={activeTab == "deposit" ? "Review Deposit" : "Review WithDraw"} />
+            <IoCloseOutline onClick={handleClose} />
           </div>
           <div className={styles.Modal__Body}>
             <Card noPadding>
               <p className={styles.Modal__Body__title}><span></span>Fintech Agency LLC</p>
               <p className={styles.Modal__Body__stitle}>{activeTab == "deposit" ? "Deposit" : "Withdraw"}</p>
               <div className={styles.Modal__Body__money}>
-                <p>100 USDC<Chip title="$100" isGrey /></p>
+                <p>100 USDC<Chip title="$100" isSecondary isModal /></p>
                 <img src={Rupee} alt="Rupee" />
               </div>
               <div className={styles.Modal__Body__tra}>
@@ -194,8 +195,8 @@ const Transaction = () => {
                 <div className={cx({ [styles.bgColor]: changebg })}></div>
               </span>
             </div>
-            {!changebg ? <p className={styles.Modal__Body__agree}>Signature 1/2 - Proceed in your wallet</p>
-              : <p className={styles.Modal__Body__agree}>Signature 2/2 - Proceed in your wallet</p>}
+            {!changebg ? <p className={styles.Modal__Body__agree2}>Signature 1/2 - Proceed in your wallet</p>
+              : <p className={styles.Modal__Body__agree2}>Signature 2/2 - Proceed in your wallet</p>}
           </div>
         </Box>
       </Modal>
