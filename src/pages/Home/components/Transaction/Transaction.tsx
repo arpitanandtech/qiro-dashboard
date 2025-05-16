@@ -91,7 +91,7 @@ const Transaction = () => {
             <p>${input}</p>
             <div className={styles.Transaction__deposit__footer__right}>
               <p>{input} USDC</p>
-              <Chip isSmall title="MAX" isPrimary isSecondary />
+              <Chip isSmall title="MAX" isPrimary isNew />
             </div>
           </div>
         </Card>
