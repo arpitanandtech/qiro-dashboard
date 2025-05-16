@@ -55,11 +55,14 @@ const Transaction = () => {
     left: '50%',
     borderRadius: '1.5rem',
     transform: 'translate(-50%, -50%)',
-    width: 400,
     bgcolor: 'background.paper',
     background: 'linear-gradient(to right, #FFFFFF 0%, #F5F2FE 25%, #ECE5FF 50%, #F0ECFE 75%, #FFFFFF 100%)',
     boxShadow: 24,
     p: 4,
+    width: '90vw',            // Responsive width
+    maxWidth: 400,            // Limit on large screens
+    maxHeight: '90vh',        // Prevent from going off screen
+    overflowY: 'auto',
   };
 
   const [toast, setToast] = useState("");
