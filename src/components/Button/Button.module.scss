@@ -1,0 +1,16 @@
+.Button {
+  width: 100%;
+  height: 3rem;
+  background-color: #7052e7;
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  &__disabled {
+    background-color: grey !important;
+  }
+  &__height {
+    height: 2rem !important;
+    font-size: 0.75rem;
+  }
+}

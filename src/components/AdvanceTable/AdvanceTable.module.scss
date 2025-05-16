@@ -1,0 +1,60 @@
+.Table {
+  background-color: white;
+  width: 100%;
+  border: 1px solid #eee !important;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  overflow: hidden;
+
+  & table {
+    border-radius: 0.5rem;
+    border: 1px solid #eee !important;
+  }
+  & tr th {
+    text-align: center;
+    font-size: 0.85rem;
+    color: grey;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  & tr td {
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.875rem;
+    color: grey;
+    padding: 0.5rem;
+  }
+  & tr:last-child td {
+    border-bottom: none; // remove last row bottom border
+  }
+}
+
+table {
+  border-radius: 0.5rem !important;
+  border: 1px solid #eee !important;
+}
+th:first-child,
+td:first-child {
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right !important;
+  padding-right: 0 !important;
+}
+
+.alignLeft {
+  text-align: left !important;
+  font-weight: 500 !important;
+  color: #333 !important;
+  padding: 1.25rem !important;
+}
+
+.paddingHeader {
+  padding: 0.65rem !important;
+  padding-left: 1.45rem !important;
+}

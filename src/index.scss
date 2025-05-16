@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* 1. Set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 4. Remove default quotes from blockquote and q */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* 5. Remove border and inherit font styles */
+button,
+input,
+select,
+textarea {
+  border: none;
+  font: inherit;
+  background: none;
+  color: inherit;
+}
+
+/* 7. Set default font and background */
+* {
+  font-family: "Inter", sans-serif !important;
+}
+body {
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #7052e7 radial-gradient(circle, transparent 1%, #7052e7 1%)
+    center/15000%;
+}
+.ripple:active {
+  background-color: #5d3fd3;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+@media all and (max-width: 767px) {
+  html {
+    font-size: 80%;
+  }
+}

@@ -1,0 +1,38 @@
+.Chip {
+  border-radius: 1.75rem;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+
+  &__primary {
+    background-color: #7052e7 !important;
+    color: white !important;
+  }
+  &__trans {
+    background-color: #f8f8f8 !important;
+    color: black !important;
+  }
+  &__full {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center;
+  }
+  &__pad {
+    padding: 1px 0.25rem !important;
+  }
+  &__grey {
+    background-color: #e6e6e6;
+    color: #333;
+    font-size: 0.6rem;
+    padding: 0.25rem !important;
+  }
+  &__secondary {
+    background-color: #ece5ff !important;
+    color: #7052e7 !important;
+  }
+}

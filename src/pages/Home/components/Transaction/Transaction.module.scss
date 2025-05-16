@@ -1,0 +1,217 @@
+.Transaction {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  &__chips {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__deposit {
+    &__footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      &__right {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      margin-top: 0.75rem;
+      & p {
+        font-size: 0.875rem;
+        color: grey;
+        font-weight: 300;
+      }
+    }
+    &__input {
+      margin-top: 0.75rem;
+      & input {
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+        color: grey;
+      }
+    }
+    &__title {
+      display: flex;
+      justify-content: space-between;
+
+      & p {
+        font-size: 0.875rem;
+        color: grey;
+        font-weight: 300;
+      }
+    }
+  }
+  &__min {
+    &__box {
+      & span {
+        font-size: 0.65rem;
+        color: grey;
+        font-weight: 400;
+      }
+
+      & p {
+        margin-top: 0.35rem;
+        font-size: 1rem;
+        color: black;
+        font-weight: 500;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 0.25rem;
+  }
+  &__subtitle {
+    font-size: 0.875rem;
+  }
+  &__acc {
+    &__box {
+      &__header {
+        display: flex;
+        justify-content: space-between;
+
+        & p {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          font-family: 0.875rem;
+        }
+      }
+      &__footer {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        & p {
+          font-size: 0.75rem;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+
+.mb10 {
+  margin-bottom: 1rem;
+}
+
+.Modal {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  &__Body {
+    &__title {
+      font-size: 0.75rem;
+      font-weight: 400;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      & span {
+        display: block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #7052e7;
+      }
+    }
+    &__stitle {
+      font-size: 0.6rem;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+    &__money {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 0.25rem;
+      & p {
+        font-size: 0.87rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.25rem;
+      }
+    }
+    &__tra {
+      margin-top: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      & p {
+        color: grey;
+        font-size: 0.65rem;
+      }
+      & span {
+        color: black;
+        font-size: 0.65rem;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        gap: 3px;
+        & svg {
+          color: black;
+          font-weight: 500;
+        }
+      }
+    }
+    &__agree {
+      margin-top: 1rem;
+      font-size: 0.6rem;
+      margin-bottom: 1rem;
+      text-align: justify;
+      color: grey;
+      & span {
+        text-decoration: underline;
+      }
+    }
+    &__completion {
+      display: flex;
+      gap: 0.5rem;
+      & span:first-child {
+        height: 4px;
+        background-color: #7052e7;
+        border-radius: 1rem;
+        width: 49%;
+      }
+      & span {
+        display: flex;
+        gap: 0.5rem;
+        height: 4px;
+        background-color: #e6e6e6;
+        border-radius: 1rem;
+        width: 49%;
+        & div {
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.noBorder {
+  border-bottom: 0;
+}
+
+@keyframes fillAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    background-color: #7052e7;
+    width: 100%;
+  }
+}
+
+.bgColor {
+  animation: fillAnimation 0.8s ease-in-out forwards;
+}
